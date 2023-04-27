@@ -365,7 +365,7 @@ nav {
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fcf8e3;
   }
-  #recoveryFormContainer::before{
+  #recoveryFormContainer{
     display: none;
   }
   
