@@ -1,0 +1,25 @@
+#top-navbar nav {
+    background-color: rgba(255, 255, 255, 0.35) !important;
+  }
+  #top-navbar nav .corp-name {
+    width: 104px;
+    height: 22px;
+    display: block;
+  }
+  
+  .btn-info {
+    background-color: #0067b8 !important;
+  }
+  
+  .text-info {
+    color: #0067b8 !important;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-control:focus {
+    border-color: #ccc;
+  }

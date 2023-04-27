@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-out;
+}
+body{
+    background-color: #383838;
+    font-family: 'Chivo Mono', monospace;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    justify-content: end;
+    width: 570px;
+    color: #ffffff;
+    text-align: right;
+    padding: 50px;
+    border-radius: 30px;
+    border: 5px solid rgba(225, 225, 225, 0.1);
+    background: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    z-index: 1;
+    
+}
+.card-body {
+    width: 75%;
+}
+.card-img {
+    position: absolute;
+    width: 40%;
+    top: -50px;
+    right: 470px;
+}
+
+/* .nav-bar{
+    background-color: #111111;
+    border-color: #fff;
+    height: 5vh;
+    width: 100%;
+   
+}
+.all-set{
+    
+    background-color: aquamarine;
+    justify-content: center;
+    
+
+   
+    
+} */
+@media screen and (min-width: 790px) and (max-width: 850px)
+{
+    .card {
+        display: flex;
+        width: fit-content;
+        height: 40vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card-body {
+        width: 70%;
+    }
+    .card-img {
+        right: 420px;
+    }
+}
+@media screen and (min-width: 670px) and (max-width: 790px)
+{
+    .card {
+        display: flex;
+        width: 70%;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1 {
+        font-size: smaller;
+    }
+    .card-img {
+        top: -80px;
+        right: 200px;
+        height: 26vh;
+    }
+}
+@media screen and (min-width: 610px) and (max-width: 669px)
+{
+    .card {
+        display: flex;
+        width: 70%;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1 {
+        font-size: smaller;
+    }
+    .card-img {
+        top: -80px;
+        right: 180px;
+        height: 26vh;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 610px)
+{
+    .card {
+        display: flex;
+        width: 70%;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1 {
+        font-size: smaller;
+    }
+    .card-img {
+        top: -80px;
+        right: 160px;
+        height: 26vh;
+    }
+}
+@media screen and (min-width: 440px) and (max-width: 510px)
+{
+    .card {
+        display: flex;
+        width: 70%;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1 {
+        font-size: smaller;
+    }
+    .card-img {
+        top: -80px;
+        right: 140px;
+        height: 26vh;
+    }
+}
+@media screen and (max-width: 440px)
+{
+    .card {
+        display: flex;
+        width: 70%;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1 {
+        font-size: smaller;
+    }
+    .card-img {
+        top: -80px;
+        right: 120px;
+        height: 26vh;
+    }
+}
